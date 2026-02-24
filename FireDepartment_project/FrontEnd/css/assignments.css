@@ -1,0 +1,25 @@
+#requests-div {
+    width: 50vw;
+}
+
+
+#data-div {
+    width: 50vw;
+}
+
+#volunteer-data-div {
+    background-color: white;
+    border-radius: 50px;
+    width: 90%;
+    height: 50%;
+}
+
+td:hover {
+    background-color: #aa00aa;
+    cursor: pointer;
+}
+
+
+.slim {
+    width: 90%;
+}

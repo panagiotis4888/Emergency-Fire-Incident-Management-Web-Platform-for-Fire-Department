@@ -1,0 +1,19 @@
+table {
+    margin-top: 50px;
+    background-color: white;
+    width: 90%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+
+}
+
+tr:nth-child(even) {
+    background-color: #aaa;
+}
+
+td {
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+

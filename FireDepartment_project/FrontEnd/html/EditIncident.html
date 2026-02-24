@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/EditIncident.js" defer></script>
+    <title>Edit Incident</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div id="nav"></div>
+    <div class="container">
+        <form id="editIncidentForm">
+            <label for="danger">Danger Level:</label>
+            <input type="text" id="danger" name="danger" required><br><br>
+            
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea><br><br>
+            
+            <label for="firemen">Firemen:</label>
+            <input type="text" id="firemen" name="firemen" required><br><br>
+            
+            <label for="vehicles">Vehicles:</label>
+            <input type="text" id="vehicles" name="vehicles" required><br><br>
+            
+            <button type="submit">Save Changes</button>
+            <button type="button" style="background:#0F0" id="finish-btn" onclick="finish()">Finish</button>
+        </form>
+    </div>
+    <script src="/js/loadNavbar.js" defer></script>
+</body>
+</html>

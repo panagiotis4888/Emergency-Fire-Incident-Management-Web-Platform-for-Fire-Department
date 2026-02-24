@@ -1,0 +1,65 @@
+#incidents-div {
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    align-items: flex-start;
+}
+
+#new-incident-form-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 89vh;
+}
+
+#incidentForm {
+    width: 30vw;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-group>label {
+    color: white;
+    min-width: 100px;
+}
+
+#form-title{
+    font-weight: 800;
+    font-size: 50px;
+    color: white;
+    margin: 0px;
+}
+
+#latitude{
+    min-width: 5vw;
+}
+
+.yellow {
+    font-size: 20px;
+    font-weight: 700;
+    color: gold;
+}
+
+table tbody tr {
+    cursor: pointer; /* Changes cursor to pointer */
+}
+
+table tbody tr:hover{
+    background: #68ada6;
+}
+
+.incidents-div {
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    align-items: flex-start;
+}
+

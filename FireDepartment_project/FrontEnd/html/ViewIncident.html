@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incident Viewer</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/view_incidents.css">
+    <script src="/js/loadNavbar.js" defer></script>
+    <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+</head>
+
+<body>
+    <div id="nav"></div>
+    <main class="flex">
+        <div id="incidents-div">
+            <h1>Incident Details</h1>
+            <div id="incident-detail-div">
+                <p><strong>Incident Type:</strong> <span id="incident-type"></span></p>
+                <p><strong>Description:</strong> <span id="description"></span></p>
+                <p><strong>Address:</strong> <span id="address"></span></p>
+                <p><strong>Municipality:</strong> <span id="municipality"></span></p>
+                <p><strong>Prefecture:</strong> <span id="prefecture"></span></p>
+                <p><strong>Start Datetime:</strong> <span id="start-datetime"></span></p>
+                <p><strong>End Datetime:</strong> <span id="end-datetime"></span></p>
+                <p><strong>Danger Level:</strong> <span id="danger"></span></p>
+                <p><strong>Status:</strong> <span id="status"></span></p>
+                <p><strong>Final Result:</strong> <span id="final-result"></span></p>
+                <p><strong>Vehicles:</strong> <span id="vehicles"></span></p>
+                <p><strong>Firemen:</strong> <span id="firemen"></span></p>
+            </div>
+            <div id="map" class="smallmap"></div>
+        </div>
+        <div id="messages-div" class="column">
+            <div id="sent-messages-div" class="column">
+                <h2>Sent Messages</h2>
+                <table id="messages-table" border="1">
+                    <thead>
+                        <tr>
+                            <th>Text</th>
+                            <th>Recipient</th>
+                            <th>Sent Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="message-table-body">
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="message-form-div" class="column">
+                <h2>Send a Message</h2>
+                <form id="message-form">
+                    <div>
+                        <label for="recipient">Recipient Type:</label>
+                        <select id="recipient" name="recipient">
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message-text">Message:</label>
+                        <textarea id="message-text" name="message-text" rows="4" cols="50"
+                            placeholder="Write your message here..."></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="/js/view_incidents.js" defer></script>
+    <script src="/js/map.js"></script>
+</body>
+
+</html>

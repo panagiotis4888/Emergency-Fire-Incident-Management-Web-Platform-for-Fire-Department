@@ -1,0 +1,22 @@
+FIRST:
+npm install
+then you can..
+
+
+
+Command Prompt ALWAYS
+
+npm run dev
+
+
+BackEnd:
+
+app.get
+
+app.post
+
+
+
+FrontEnd:
+
+front fetch h axios

@@ -1,0 +1,210 @@
+@import url('/css/navbar.css');
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #872222;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.container2 {
+    max-width: 1800px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #0056b3;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#map {
+    width: 100%;
+}
+
+.smallmap {
+    height: 400px;
+}
+
+.bigmap {
+    height: 80vh;
+}
+
+.radio-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.radio-row>input {
+    width: 20px;
+}
+
+.radio-row>label {
+    margin-left: 3vw;
+}
+
+#dashboard-status-div {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    height: 8vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#dashboard-status-text {
+    color: white;
+    font-weight: 800;
+    font-size: 30px;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    height: 89vh;
+}
+
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.center-start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dashboard-status {
+    margin-left: 1vw;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#nearest-fire {
+    margin-left: 1vw;
+    color: white;
+    font-weight: 700;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#sent-messages-div {
+    width: 100%;
+}
+
+#sent-messages-div>table {
+    background: white;
+    width: 100%;
+}
+
+#message-form-div>form {
+    background: white;
+}
+
+textarea {
+    width: 200px;
+    height: 50px;
+    resize: none;
+}
+
+footer {
+    background: #555555;
+    display: flex;
+    gap: 5vw;
+    justify-content: center;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Assignments</title>
+    <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header id="nav"></header>
+    <script src="/js/loadNavbar.js"></script>
+
+    <main class="container">
+        <form id="profileForm">
+            <label>First Name: <input type="text" id="firstname"></label><br>
+            <label>Last Name: <input type="text" id="lastname"></label><br>
+            <label>Birthdate: <input type="text" id="birthdate"></label><br>
+            <label>Gender: <input type="text" id="gender"></label><br>
+            <label>Job: <input type="text" id="job"></label><br>
+            <label>Country: <input type="text" id="country"></label><br>
+            <label>Telephone: <input type="text" id="telephone" readonly></label><br>
+            <label>AFM: <input type="text" id="afm" readonly></label><br>
+            <label>Address: <input type="text" id="address"></label><br>
+            <label>Municipality: <input type="text" id="municipality"></label><br>
+            <label>Prefecture: <input type="text" id="prefecture"></label><br>
+            <input hidden id="latitude">
+            <input hidden id="longitude">
+            <button type="button" class="button" onclick="Check(update_pos)">check</button>
+            <map id="map" class="smallmap"></map>
+            <button id="submit" type="submit" class="button" disabled>Save Changes</button>
+        </form>
+    </main>
+
+    <script src="/js/profile.js"></script>
+    <script src="/js/map.js"></script>
+</body>
+
+</html>

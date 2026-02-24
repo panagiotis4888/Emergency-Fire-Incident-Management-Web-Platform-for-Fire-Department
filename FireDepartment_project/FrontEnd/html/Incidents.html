@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Incidents</title>
+    <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/incidents.css">
+    <link rel="stylesheet" href="/css/table.css">
+
+</head>
+
+<body>
+    <header id="nav"></header>
+    <script src="/js/loadNavbar.js"></script>
+
+    <main class="flex">
+        <div id="left" class="column">
+            <div id="incidents-div">
+            </div>
+        </div>
+        <div id="new-incident-form-div">
+            <form id="incidentForm">
+                <p id="form-title">New Incident Form</p>
+                <div class="form-group">
+                    <label for="incidentType">Incident Type</label>
+                    <input type="text" id="incidentType" placeholder="accident or fire" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <input id="description" placeholder="Describe the incident..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" placeholder="e.g., Agia Pelagia" required>
+                </div>
+                <div class="form-group">
+                    <label for="prefecture">Prefecture</label>
+                    <input type="text" id="prefecture" placeholder="e.g., Heraklion" required>
+                </div>
+                <div class="form-group">
+                    <label for="municipality">Municipality</label>
+                    <input type="text" id="municipality" placeholder="e.g., Malevizi" required>
+                </div>
+                <div class="form-group">
+                    <button type="button" onclick="Check(submitEnable)">Confirm address</button>
+                    <input hidden id="latitude" class="yellow">
+                    <input hidden id="longitude" class="yellow">
+                </div>
+                <button id="submit" type="submit" class="button" disabled>Submit Incident</button>
+            </form>
+        </div>
+        <div></div>
+    </main>
+
+    <script src="/js/map.js"></script>
+    <script>
+
+    </script>
+    <script src="/js/incidents.js?v=1.0" defer></script>
+</body>
+
+</html>

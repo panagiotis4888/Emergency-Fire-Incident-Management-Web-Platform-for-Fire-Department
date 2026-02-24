@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Assignments</title>
+    <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/ai.css">
+
+</head>
+
+<body>
+    <header id="nav"></header>
+    <script src="/js/loadNavbar.js"></script>
+
+    <main class="chat-container">
+        <div id="chat-box">
+            <div id="chat-messages">
+            </div>
+            <div id="chat-input-container">
+                <input type="text" id="user-input" placeholder="Ask a fire-accident-related question..." />
+                <button id="send-btn">Send</button>
+            </div>
+            <div id="questions">
+                <button id="question1">Is my house on fire?</button>
+                <button id="question2">When is my next accident going to be?</button>
+            </div>
+        </div>
+    </main>
+    <script src="/js/ai.js" defer></script>
+    <script src="/js/map.js"></script>
+</body>
+
+</html>

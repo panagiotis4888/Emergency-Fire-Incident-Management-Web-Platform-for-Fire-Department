@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/UserLogin.js" defer></script>
+    <title>User Login</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Login</h1>
+
+        <form id="UserloginForm" onsubmit="handleLogin(event)">
+            <div class="radio-row">
+                <label for="usertype">User Type:</label>
+                <label for="male">User</label>
+                <input type="radio" id="user" name="usertype" value="user" required>
+                <label for="volunteer">Volunteer</label>
+                <input type="radio" id="volunteer" name="usertype" value="volunteer">
+                <label for="admin">Admin</label>
+                <input type="radio" id="admin" name="usertype" value="admin">
+            </div>
+            <label for="username">Name:</label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+            <button type="submit">Login</button>
+            <button type="button" onclick="window.location.href='/html/UserRegister.html';">Register</button>
+        </form>
+        <p id="error" style="color: red; display: none;">Invalid login credentials!</p>
+    </div>
+    <script src="/js/loginHandler.js"></script>
+</body>
+
+</html>
